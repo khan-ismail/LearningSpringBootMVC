@@ -4,3 +4,57 @@
     color: crimson;
     font-style: italic;
 }
+
+/*Display Registration Form Data CSS*/
+.student-table {
+    width: 60%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.student-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.table-header {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.student-table tr:hover {
+    background-color: #e6f2ff;
+    transition: 0.3s;
+}
+
+/*Form validation Error Message CSS*/
+.error-message {
+    color: #e74c3c;              /* red text */
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Optional: input field highlight when error */
+.input-error {
+    border: 1px solid #e74c3c;
+    background-color: #fdecea;
+}
+
+/* Optional: error box style (for global errors) */
+.error-box {
+    background-color: #fdecea;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}

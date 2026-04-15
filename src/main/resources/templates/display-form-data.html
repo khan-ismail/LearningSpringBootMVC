@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Display Form</title>
+    <link rel="stylesheet" th:href="@{/css/index.css}"/>
+</head>
+<body>
+    <table class="student-table">
+        <tr class="table-header">
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Email</td>
+            <td>Country</td>
+            <td>Gender</td>
+            <td>Skills</td>
+        </tr>
+        <tr>
+            <td><p th:text="${student.firstName}" /></td>
+            <td><p th:text="${student.lastName}" /></td>
+            <td><p th:text="${student.email}" /></td>
+            <td><p th:text="${student.country}" /></td>
+            <td><p th:text="${student.gender}" /></td>
+            <td>
+                <ul>
+                    <li th:each="skill : ${student.skills}" th:text="${skill}"></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

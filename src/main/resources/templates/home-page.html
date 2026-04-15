@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" th:href="@{/css/index.css}"/>
+</head>
+<body>
+    <p class="display-time" th:text="${message}" />
+    <a th:href="@{/registration-form}" th:text="Registration" />
+</body>
+</html>
